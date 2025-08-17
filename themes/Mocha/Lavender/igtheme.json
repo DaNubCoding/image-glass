@@ -37,7 +37,7 @@
     "MenuBgColor": "#181825FF",
     "MenuBgHoverColor": "#B4BEFE33",
     "MenuTextColor": "#CDD6F4FF",
-    "MenuTextHoverColor": "#FFFFFFFF",
+    "MenuTextHoverColor": "#B4BEFEFF",
 
     "NavigationButtonColor": "#B4BEFEFF"
   },
@@ -80,3 +80,4 @@
     "Exit": "Exit.svg"
   }
 }
+
