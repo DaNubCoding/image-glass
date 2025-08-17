@@ -1,0 +1,91 @@
+---
+whiskers:
+  version: "^2.5.1"
+  matrix:
+    - flavor
+    - accent
+  hex_format: "#{{R}}{{G}}{{B}}"
+  filename: "./themes/{{flavor.identifier | capitalize}}/{{accent | capitalize}}/igtheme.json"
+---
+{
+  "_Metadata": {
+    "Description": "ImageGlass theme configuration file",
+    "Version": "9.0"
+  },
+  "Info": {
+    "Name": "Catppuccin {{flavor.name}} - {{accent | capitalize}}",
+    "Author": "DaNubCoding",
+    "Website": "https://github.com/DaNubCoding/image-glass",
+    "Description": "Catppuccin {{flavor.name}} base with {{accent | capitalize}} accent",
+    "Version": "1.0"
+  },
+  "Settings": {
+    "IsDarkMode": {{flavor.dark}},
+    "IsShowTitlebarLogo": true,
+    "NavButtonLeft": "ViewPreviousImage.svg",
+    "NavButtonRight": "ViewNextImage.svg",
+    "PreviewImage": "preview.webp",
+    "AppLogo": "Logo.svg"
+  },
+  "Colors": {
+    "BgColor": "{{base.hex}}FF",
+    "TextColor": "{{text.hex}}FF",
+
+    "ToolbarBgColor": "{{mantle.hex}}FF",
+    "ToolbarTextColor": "{{text.hex}}FF",
+    "ToolbarItemHoverColor": "{{flavor.colors[accent].hex}}44",
+    "ToolbarItemActiveColor": "{{flavor.colors[accent].hex}}88",
+    "ToolbarItemSelectedColor": "{{flavor.colors[accent].hex}}66",
+
+    "GalleryBgColor": "{{base.hex}}FF",
+    "GalleryTextColor": "{{subtext1.hex}}FF",
+    "GalleryItemHoverColor": "{{flavor.colors[accent].hex}}44",
+    "GalleryItemActiveColor": "{{flavor.colors[accent].hex}}88",
+    "GalleryItemSelectedColor": "{{flavor.colors[accent].hex}}66",
+
+    "MenuBgColor": "{{mantle.hex}}FF",
+    "MenuBgHoverColor": "{{flavor.colors[accent].hex}}33",
+    "MenuTextColor": "{{text.hex}}FF",
+    "MenuTextHoverColor": "{{flavor.colors[accent].hex}}FF",
+
+    "NavigationButtonColor": "{{flavor.colors[accent].hex}}FF"
+  },
+  "ToolbarIcons": {
+    "ActualSize": "ActualSize.svg",
+    "AutoZoom": "AutoZoom.svg",
+    "Checkerboard": "Checkerboard.svg",
+    "ColorPicker": "ColorPicker.svg",
+    "Crop": "Crop.svg",
+    "Delete": "Delete.svg",
+    "Edit": "Edit.svg",
+    "FlipHorz": "FlipHorz.svg",
+    "FlipVert": "FlipVert.svg",
+    "FullScreen": "FullScreen.svg",
+    "GoToImage": "GoToImage.svg",
+    "LockZoom": "LockZoom.svg",
+    "MainMenu": "MainMenu.svg",
+    "OpenFile": "OpenFile.svg",
+    "Print": "Print.svg",
+    "Refresh": "Refresh.svg",
+    "RotateLeft": "RotateLeft.svg",
+    "RotateRight": "RotateRight.svg",
+    "Save": "Save.svg",
+    "ScaleToFill": "ScaleToFill.svg",
+    "ScaleToFit": "ScaleToFit.svg",
+    "ScaleToHeight": "ScaleToHeight.svg",
+    "ScaleToWidth": "ScaleToWidth.svg",
+    "Slideshow": "Slideshow.svg",
+    "Gallery": "Gallery.svg",
+    "ViewFirstImage": "ViewFirstImage.svg",
+    "ViewLastImage": "ViewLastImage.svg",
+    "ViewNextImage": "ViewNextImage.svg",
+    "ViewPreviousImage": "ViewPreviousImage.svg",
+    "WindowFit": "WindowFit.svg",
+    "ZoomIn": "ZoomIn.svg",
+    "ZoomOut": "ZoomOut.svg",
+    "Play": "Play.svg",
+    "Pause": "Pause.svg",
+    "Export": "Export.svg",
+    "Exit": "Exit.svg"
+  }
+}

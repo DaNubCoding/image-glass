@@ -1,0 +1,64 @@
+---
+whiskers:
+  version: "^2.5.1"
+  matrix:
+    - flavor
+    - accent
+    - icon: [
+      "FlipVert",
+      "FullScreen",
+      "Gallery",
+      "LockZoom",
+      "MainMenu",
+      "OpenFile",
+      "Pause",
+      "Play",
+      "Print",
+      "Refresh",
+      "RotateLeft",
+      "RotateRight",
+      "Save",
+      "ScaleToFill",
+      "ScaleToFit",
+      "ScaleToHeight",
+      "ScaleToWidth",
+      "Slideshow",
+      "ViewFirstImage",
+      "ViewLastImage",
+      "ViewNextImage",
+      "ViewPreviousImage",
+      "WindowFit",
+      "ZoomIn",
+      "ZoomOut",
+      "ActualSize",
+      "AutoZoom",
+      "Checkerboard",
+      "ColorPicker",
+      "Crop",
+      "Delete",
+      "Edit",
+      "Exit",
+      "Export",
+      "FlipHorz"
+    ]
+  hex_format: "#{{r}}{{g}}{{b}}"
+  filename: "./themes/{{flavor.identifier | capitalize}}/{{accent | capitalize}}/{{icon}}.svg"
+---
+
+{# Use accent color instead for next and previous #}
+{%- if icon in ["ViewNextImage","ViewPreviousImage"] -%}
+  {%- set primary_color = flavor.colors[accent].hex -%}
+{%- else -%}
+  {%- set primary_color = text.hex -%}
+{%- endif -%}
+
+{# The fainter bits in the SVGs that always seem to have an opacity set #}
+{%- set secondary_color = subtext1.hex -%}
+
+{{ read_file(path="../assets/svg/" ~ icon ~ ".svg")
+  | replace(from='fill="#ddd"', to='fill="' ~ primary_color ~ '"')
+  | replace(from='stroke="#ddd"', to='stroke="' ~ primary_color ~ '"')
+  | replace(from='fill="#fff"', to='fill="' ~ secondary_color ~ '"')
+  | replace(from='stroke="#fff"', to='stroke="' ~ secondary_color ~ '"')
+  | safe
+}}

@@ -1,13 +1,13 @@
-﻿{
+{
   "_Metadata": {
     "Description": "ImageGlass theme configuration file",
     "Version": "9.0"
   },
   "Info": {
-    "Name": "Catppuccin Frappe - Sky",
+    "Name": "Catppuccin Frappé - Sky",
     "Author": "DaNubCoding",
     "Website": "https://github.com/DaNubCoding/image-glass",
-    "Description": "Catppuccin Frappe base with Sky accent",
+    "Description": "Catppuccin Frappé base with Sky accent",
     "Version": "1.0"
   },
   "Settings": {
@@ -80,4 +80,3 @@
     "Exit": "Exit.svg"
   }
 }
-

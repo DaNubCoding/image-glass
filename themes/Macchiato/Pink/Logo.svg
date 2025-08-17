@@ -84,8 +84,7 @@
 <stop offset="0.742622" stop-color="#BDE3FF"/>
 </radialGradient>
 <clipPath id="clip0_811_624">
-<rect width="48" height="48" fill="#CDD6F4"/>
+<rect width="48" height="48" fill="white"/>
 </clipPath>
 </defs>
 </svg>
-

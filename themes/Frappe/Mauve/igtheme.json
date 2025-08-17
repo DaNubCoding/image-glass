@@ -1,13 +1,13 @@
-﻿{
+{
   "_Metadata": {
     "Description": "ImageGlass theme configuration file",
     "Version": "9.0"
   },
   "Info": {
-    "Name": "Catppuccin Frappe - Mauve",
+    "Name": "Catppuccin Frappé - Mauve",
     "Author": "DaNubCoding",
     "Website": "https://github.com/DaNubCoding/image-glass",
-    "Description": "Catppuccin Frappe base with Mauve accent",
+    "Description": "Catppuccin Frappé base with Mauve accent",
     "Version": "1.0"
   },
   "Settings": {
@@ -80,4 +80,3 @@
     "Exit": "Exit.svg"
   }
 }
-
