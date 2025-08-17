@@ -36,9 +36,12 @@
 
 ## Usage
 
-1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
-3. Select the downloaded flavor file.
+1. Download the `Catppuccin-[Flavour]-[Accent].igtheme` file of your choice from the [`themes`](./themes/) directory.
+2. Open ImageGlass and navigate to **Settings** (`Ctrl + ,`) > **Appearance**.
+3. Under **Theme**, click on **Install...**
+4. Select the downloaded `.igtheme` file.
+5. The theme should now show up in the list, select it as your active dark or light theme.
+6. Click OK and enjoy!
 
 ## 💝 Thanks to
 
