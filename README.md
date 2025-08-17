@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Download the `Catppuccin-[Flavour]-[Accent].igtheme` file of your choice from the [`themes`](./themes/) directory.
+1. Download the `[Flavour]/[Accent].igtheme` file of your choice from the [`themes`](./themes/) directory.
 2. Open ImageGlass and navigate to **Settings** (`Ctrl + ,`) > **Appearance**.
 3. Under **Theme**, click on **Install...**
 4. Select the downloaded `.igtheme` file.
