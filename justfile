@@ -1,15 +1,9 @@
-build: templates add_logo add_preview create_igthemes
+build: templates add_preview create_igthemes
 
 templates:
   whiskers templates/igtheme.tera
   whiskers templates/svg.tera
-
-add_logo:
-  for flavor in $(whiskers --list-flavors -o plain); do \
-    for accent in $(whiskers --list-accents -o plain); do \
-      cp "./assets/Logo.svg" "./themes/${flavor^}/${accent^}/Logo.svg"; \
-    done; \
-  done
+  whiskers templates/logo.tera
 
 add_preview:
   for flavor in $(whiskers --list-flavors -o plain); do \

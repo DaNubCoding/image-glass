@@ -21,7 +21,6 @@ whiskers:
   },
   "Settings": {
     "IsDarkMode": {{flavor.dark}},
-    "IsShowTitlebarLogo": true,
     "NavButtonLeft": "ViewPreviousImage.svg",
     "NavButtonRight": "ViewNextImage.svg",
     "PreviewImage": "preview.webp",

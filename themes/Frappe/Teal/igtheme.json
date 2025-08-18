@@ -12,7 +12,6 @@
   },
   "Settings": {
     "IsDarkMode": true,
-    "IsShowTitlebarLogo": true,
     "NavButtonLeft": "ViewPreviousImage.svg",
     "NavButtonRight": "ViewNextImage.svg",
     "PreviewImage": "preview.webp",

@@ -1,0 +1,20 @@
+---
+whiskers:
+  version: "^2.5.1"
+  matrix:
+    - flavor
+    - accent
+  hex_format: "#{{r}}{{g}}{{b}}"
+  filename: "./themes/{{flavor.identifier | capitalize}}/{{accent | capitalize}}/Logo.svg"
+---
+
+{%- set accent_color = flavor.colors[accent].hex -%}
+{%- set text_color = crust.hex -%}
+
+{{ read_file(path="../assets/Logo.svg")
+  | replace(from='fill="#fff"', to='fill="' ~ text_color ~ '"')
+  | replace(from='stroke="#fff"', to='stroke="' ~ text_color ~ '"')
+  | replace(from='fill="#000"', to='fill="' ~ accent_color ~ '"')
+  | replace(from='stroke="#000"', to='stroke="' ~ accent_color ~ '"')
+  | safe
+}}
