@@ -45,7 +45,7 @@
 
 ## 💝 Thanks to
 
-- [DaNub](https://github.com/DaNubCoding)
+- [ione](https://github.com/cat-ione)
 
 &nbsp;
 
